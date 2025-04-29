@@ -1,0 +1,26 @@
+<header> 
+  <div class="main">
+    {% if section %}
+      <a href="{{ config.base_url }}">{{ config.title }}</a>
+      {% if section.title != "home" %}
+        / <a href="/{{ section.title }}">{{ section.title }}</a>
+      {% endif %}
+    {% else %}
+      {% set section = get_section(path=page.ancestors | last) %}
+      <a href="{{ config.base_url }}">{{ config.title }}</a> / <a href="/{{ section.title }}">{{ section.title }}</a> / <a>{{ page.title }}</a>
+    {% endif %}
+  </div>
+
+  <nav>
+    {% for menu in config.extra.menu %}
+    {% if menu.name != section.title %}
+      <a href={{ get_url(path=menu.url) }}>{{ menu.name }}</a>
+      {% endif %}
+      {% endfor %}
+    {% for social in config.extra.socials %}
+      <a rel="me" href="{{ social.url }}" class="social">
+        <img alt="{{ social.name }}" src="{{ get_url(path="icons/social/" ~ social.icon ~ ".svg") }}">
+      </a>
+    {% endfor %}
+  </nav>
+</header>

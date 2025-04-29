@@ -1,0 +1,24 @@
+.home-container {
+  margin-top: 5rem;
+
+  .connect {
+    margin-top: 5rem;
+
+    .connect-table {
+      margin-top: 2rem;
+
+      td {
+        padding: 0rem 6rem 1rem 0;
+        vertical-align: top;
+        
+        a::after {
+          display: inline-block;
+          content: "↗";
+          color: var(--color-medium-tint);
+          margin-left: 0.15ch;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* optional: handles smaller screens */
+  padding: 1em 0;
+}
+
+.footer-left {
+  margin-right: 0 auto;
+  text-align: left;
+
+  #clock {
+    font-family: monospace;
+  }
+}
+
+.footer-center {
+  margin: 0 auto;
+  justify-self: center;
+  text-align: center;
+}
+
+.footer-right {
+  margin-left: auto;
+  text-align: right;
+}

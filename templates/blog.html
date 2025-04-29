@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+  <!-- If you are using pagination, section.pages will be empty.
+       You need to use the paginator object -->  
+  {% for page in section.pages %}
+  <li>
+    <img src="{{ page.extra.img }}"></img>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <p>{{ page.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock content %}
+
