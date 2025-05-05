@@ -21,5 +21,30 @@
   </section>
 </body>
 
+<script>
+const timezone = "{{ config.extra.clock.timezone | default(value='Europe/Rome') | safe}}";
+const city = "{{ config.extra.clock.city | default(value='Bologna') }}";
+
+document.addEventListener("DOMContentLoaded", function() {
+  function updateClock() {
+    const options = { 
+      timeZone: timezone,
+      hour: '2-digit', 
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    };
+    
+    const time = new Date().toLocaleTimeString('it-IT', options);
+    document.getElementById('clock').textContent = `${city}, ${time}`;
+    
+    // Update every second
+    setTimeout(updateClock, 1000);
+  }
+  
+  updateClock();
+});
+</script>
+
 </html>
 

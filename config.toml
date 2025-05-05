@@ -23,3 +23,8 @@ menu = [
 socials = [
 #    { name = "github", url = "https://github.com/simonetassi/", icon = "github" },
 ]
+
+[extra.clock]
+timezone = 'Europe/Rome'
+city = 'Bologna'
+
