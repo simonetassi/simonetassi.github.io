@@ -39,7 +39,17 @@
     flex: 1;
   }
 
-    a:link, a:visited {
+  @media (max-width: 710px) {
+  .content {
+    max-width: 90%; 
+  }
+
+  header .main a {
+    font-size: 20px;
+  }
+}
+
+  a:link, a:visited {
       color: var(--color-primary);
   }
 

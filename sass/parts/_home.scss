@@ -5,10 +5,11 @@
     margin-top: 5rem;
 
     .connect-table {
+      width: 100%;
       margin-top: 2rem;
 
       td {
-        padding: 0rem 6rem 1rem 0;
+        padding-bottom: 1rem;
         vertical-align: top;
         
         a::after {
