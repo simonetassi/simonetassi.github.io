@@ -6,11 +6,11 @@ header {
   margin: 3em 0;
 
   a {
-        text-decoration: none;
+    text-decoration: none;
   }
 
   a:hover {
-        text-decoration: underline; 
+    text-decoration: underline;
   }
 
   nav a {
@@ -18,3 +18,8 @@ header {
   }
 }
 
+@media (max-width: 710px) {
+  .page-title {
+    display: none;
+  }
+}

@@ -7,7 +7,7 @@
       {% endif %}
     {% else %}
       {% set section = get_section(path=page.ancestors | last) %}
-      <a href="{{ config.base_url }}">{{ config.title }}</a> / <a href="/{{ section.title }}">{{ section.title }}</a> / <a>{{ page.title }}</a>
+      <a href="{{ config.base_url }}">{{ config.title }}</a> / <a href="/{{ section.title }}">{{ section.title }}</a><span class="page-title"> / <a>{{ page.title }}</a></span>
     {% endif %}
   </div>
 
