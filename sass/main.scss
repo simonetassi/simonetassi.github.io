@@ -4,6 +4,8 @@
 @import "parts/_footer.scss"
 @import "parts/_home.scss"
 @import "parts/_about.scss"
+@import "parts/_blog.scss"
+@import "parts/_projects.scss"
 
 :root {
   background-color: var(--background-color);
@@ -42,10 +44,6 @@
   @media (max-width: 710px) {
   .content {
     max-width: 90%; 
-  }
-
-  header .main a {
-    font-size: 20px;
   }
 }
 

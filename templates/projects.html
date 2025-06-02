@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<ul>
+<ul style="padding-left: 10px;">
 {% for page in section.pages %}
-  <li>
-    <a href="{{ page.extra.url | safe }}">{{ page.title }}</a>
-    <div>{{ page.description }}</div>
+  <li class="project-item">
+    <div class="project" onclick="location.href='{{ page.extra.url | safe }}';">
+      <a class="project-title" href="{{ page.extra.url | safe }}">{{ page.title }}</a>
+      <div class="project-description"><p>{{ page.description }}</p></div>
+    </div>
   </li>
   {% endfor %}
 </ul>
 {% endblock content %}
-

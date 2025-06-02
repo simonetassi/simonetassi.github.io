@@ -1,14 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
+<ul style="padding-left: 10px;">
   {% for page in section.pages %}
-  <li>
-    <img src="{{ page.extra.img }}"></img>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    <p>{{ page.description }}</p>
+  <li class="post-item">
+    <img class="img-preview" src="{{ page.extra.img }}"></img>
+    <div class="post" onclick="location.href='{{ page.permalink | safe }}';">
+      <p class="post-title">{{ page.title }}</p>
+      <p class="date">{{ page.date }}</p>
+      <div class="post-description">
+        <p>{{ page.description }}</p>
+      </div>
+    </div>
   </li>
   {% endfor %}
 </ul>
