@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<ul style="padding-left: 10px;">
+<ul style="padding-left: 0px;">
 {% for page in section.pages %}
   <li class="project-item">
     <div class="project" onclick="location.href='{{ page.extra.url | safe }}';">
