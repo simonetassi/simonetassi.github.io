@@ -3,6 +3,7 @@
   align-items: stretch;
   height: 100px;
   padding: 16px;
+  cursor: pointer;
 
   .img-preview {
     object-fit: cover;
@@ -13,8 +14,7 @@
     flex-direction: column;
     flex: 1;
     padding-left: 12px;
-    cursor: pointer;
-
+    
     .post-title {
       font-size: 20px;
       font-weight: medium;

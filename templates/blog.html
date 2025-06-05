@@ -3,9 +3,9 @@
 {% block content %}
 <ul style="padding-left: 10px;">
   {% for page in section.pages %}
-  <li class="post-item">
+  <li class="post-item" onclick="location.href='{{ page.permalink | safe }}';">
     <img class="img-preview" src="{{ page.extra.img }}"></img>
-    <div class="post" onclick="location.href='{{ page.permalink | safe }}';">
+    <div class="post">
       <p class="post-title">{{ page.title }}</p>
       <p class="date">{{ page.date }}</p>
       <div class="post-description">
