@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>Simone Tassi</title>   
+  <link rel="stylesheet" href="https://simonetassi.github.io/main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="/icons/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/icons/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/icons/favicon/site.webmanifest" /> 
+ 
+</head>
+
+<body>
+  <section class="section">
+    <div class="content">
+      <header> 
+  <div class="main">
+    
+      <a href="https:&#x2F;&#x2F;simonetassi.github.io">simonetassi</a>
+      
+        / <a href="/about">about</a>
+      
+    
+  </div>
+
+  <nav>
+    
+    
+      
+    
+      <a href=https://simonetassi.github.io/blog>blog</a>
+      
+      
+    
+      <a href=https://simonetassi.github.io/projects>projects</a>
+      
+      
+    
+  </nav>
+</header>
+
+      <main>
+<div class="about-container">
+  <!--<img src="imgs/me.png"></img>-->
+  <div style="margin-top: 5rem;"><p>I’m currently pursuing a Master’s Degree in Computer Science with a specialization in Systems and Networks at the <a rel="noopener" target="_blank" href="https://www.unibo.it/en">University of Bologna</a>. As part of my academic journey, I’m deepening my knowledge in key areas such as Artificial Intelligence, Machine Learning, Edge and Cloud Computing, Data Science, and the Internet of Things. After gaining a strong theoretical foundation, I’ve been applying my knowledge through hands-on projects, which you can explore <a href="../projects">here</a>.</p>
+<p>Alongside my studies, I’m working part-time as a Software Engineer at <a rel="noopener" target="_blank" href="https://archeion.tech">Archeion</a>, where we develop end-to-end traceability solutions to ensure supply chain integrity, transparency, and authenticity. Our work combines the power of Artificial Intelligence, Blockchain, and the Internet of Things to deliver innovative and reliable systems.</p>
+<p>Apart from my academic/professional interests, music accompanies me throughout my days in various forms—from playing electric guitar and DJing at local venues to building my record collection. Each aspect offers a creative counterbalance to my technical work.
+My tastes particularly lean towards Jazz, World Music and (Deep) House but I am always ready to dig into new artists and genres.</p>
+<p>I particoularly enjoy reading and I keep track of what's on <a rel="noopener" target="_blank" href="https://www.goodreads.com/user/show/177877174">my shelf</a>.</p>
+<p>Here is my <a href="/simone-tassi-cv.pdf">curriculm vitae</a>.</p>
+</div>
+</div>
+</main>
+      <footer>
+  <p class="footer-left">
+    <span id="clock">Bologna, 12:00</span>
+  </p>
+  <p class="footer-center">
+    <a href="https://www.github.com/simonetassi" target="_blank">source</a> |
+    <a
+      href="https://www.gnu.org/licenses/agpl-3.0.html#license-text"
+      target="_blank"
+      >GNU AGPL</a
+    >
+  </p>
+  <p class="footer-right">
+    Built with <a href="https://getzola.org" target="_blank">Zola</a>
+  </p>
+</footer>
+
+    </div>
+  </section>
+</body>
+
+<script>
+const timezone = "Europe/Rome";
+const city = "Bologna";
+
+document.addEventListener("DOMContentLoaded", function() {
+  function updateClock() {
+    const options = { 
+      timeZone: timezone,
+      hour: '2-digit', 
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    };
+    
+    const time = new Date().toLocaleTimeString('it-IT', options);
+    document.getElementById('clock').textContent = `${city}, ${time}`;
+    
+    // Update every second
+    setTimeout(updateClock, 1000);
+  }
+  
+  updateClock();
+});
+</script>
+
+</html>
+
