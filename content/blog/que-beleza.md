@@ -3,7 +3,7 @@ title = "que beleza!"
 description = "A brazilian latin-jazz playlist"
 date = 2025-06-03 
 [extra]
-img = "imgs/blog/que_beleza.png"
+img = "/imgs/blog/que_beleza.png"
 +++
 This is the first playlist I am releasing and features some of the grooviest Brazilian tracks I know.
 
