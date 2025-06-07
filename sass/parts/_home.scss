@@ -4,20 +4,38 @@
   .connect {
     margin-top: 5rem;
 
-    .connect-table {
-      width: 100%;
+    .connect-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem 2rem;
       margin-top: 2rem;
+      align-items: start;
+      grid-template-columns: 1fr 1fr;
 
-      td {
-        padding-bottom: 1rem;
-        vertical-align: top;
+      .connect-label {
+        font-weight: 500;
+        color: var(--color-medium-tint, #666);
+      }
 
-        a::after {
-          display: inline-block;
-          content: "↗";
-          color: var(--color-medium-tint);
-          margin-left: 0.15ch;
-          text-decoration: none;
+      a::after {
+        display: inline-block;
+        content: "↗";
+        color: var(--color-medium-tint);
+        margin-left: 0.15ch;
+        text-decoration: none;
+      }
+
+      /* Responsive: stack on smaller screens */
+      @media (max-width: 560px) {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        
+        .connect-label {
+          margin-top: 1rem;
+          
+          &:first-child {
+            margin-top: 0;
+          }
         }
       }
     }
