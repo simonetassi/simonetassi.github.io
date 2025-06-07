@@ -11,4 +11,4 @@ My tastes particularly lean towards Jazz, World Music and (Deep) House but I am 
 
 I particoularly enjoy reading and I keep track of what's on [my shelf](https://www.goodreads.com/user/show/177877174). 
 
-Here is my [curriculm vitae](simone-tassi-cv.pdf).
+Here is my [curriculm vitae](/simone-tassi-cv.pdf).
