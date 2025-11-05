@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://simonetassi.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/about/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/blog/que-beleza/</loc>
+        <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/contacts/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/projects/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/projects/cifar10-separation/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/projects/cx-game/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/projects/scala-spark-co-purchase-analysis/</loc>
+    </url>
+    <url>
+        <loc>https://simonetassi.github.io/projects/wot-flow/</loc>
+    </url>
+</urlset>

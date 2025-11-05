@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>Simone Tassi</title>   
+  <link rel="stylesheet" href="https://simonetassi.github.io/main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="/icons/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/icons/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/icons/favicon/site.webmanifest" /> 
+ 
+</head>
+
+<body>
+  <section class="section">
+    <div class="content">
+      <header> 
+  <div class="main">
+    
+      
+      <a href="https:&#x2F;&#x2F;simonetassi.github.io">simonetassi</a> / <a href="/blog">blog</a><span class="page-title"> / <a>que beleza!</a></span>
+    
+  </div>
+
+  <nav>
+    
+    
+      <a href=https://simonetassi.github.io/about>about</a>
+      
+      
+    
+      
+    
+      <a href=https://simonetassi.github.io/projects>projects</a>
+      
+      
+    
+  </nav>
+</header>
+
+      <main>
+<h1 class="title">
+  que beleza!
+</h1>
+<p class="date">2025-06-03</p>
+<p>This is the first playlist I am releasing and features some of the grooviest Brazilian tracks I know.</p>
+<p>You can stream it directly on <a rel="noopener" target="_blank" href="https://open.spotify.com/playlist/3JBpcs2xKKKFJpkHS3EKwY?si=f1a7c872a0854f8a">Spotify</a> or download the playlist file attached to this article.</p>
+<p>My passion for Brazilian music started long ago, when, while looking for new jazz records to listen to, I found <a rel="noopener" target="_blank" href="https://www.discogs.com/master/85178-Stan-Getz-Joao-Gilberto-Getz-Gilberto"><em>Getz/Gilberto</em></a>, considered a bossa nova masterpiece, and I instantly fell in love with its sound.
+What truly fascinated me was the sound of the Portuguese language (that I had never had the chance to appreciate before), and how it mixed perfectly with the syncopated guitar rhythms. From that moment, I started my journey into the world of Brazilian sounds, from bossa nova to MPB, discovering great artists and growing my curiosity for the country.</p>
+<p>While discovering more and more music, I was drawn to jazz-funk records that stood out for their refined but not overbearing harmonies, which, mixed with groovy rhythms and uplifting melodies, create an irresistibly vibrant and soulful atmosphere.</p>
+<p>This playlist marks an important stop along my musical journey—an eclectic collection of hidden gems that I believe everyone should hear at least once. Each track comes from an outstanding album, so if you feel like diving deeper into the genre, I highly recommend giving the full records a listen. You won't be disappointed.</p>
+<p>Enjoy!</p>
+<div class="playlist-grid">
+ <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3JBpcs2xKKKFJpkHS3EKwY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <div class="button-column">
+    <a href="/playlists/que-beleza.csv" download class="download-button">
+      Download Playlist (.csv)
+    </a>
+    <a href="/playlists/que-beleza.txt" download class="download-button">
+      Download Playlist (.txt)
+    </a>
+  </div>
+</div>
+
+</main>
+      <footer>
+  <p class="footer-left">
+    <span id="clock">Bologna, 12:00</span>
+  </p>
+  <p class="footer-center">
+    <a href="https://www.github.com/simonetassi" target="_blank">source</a> |
+    <a
+      href="https://www.gnu.org/licenses/agpl-3.0.html#license-text"
+      target="_blank"
+      >GNU AGPL</a
+    >
+  </p>
+  <p class="footer-right">
+    Built with <a href="https://getzola.org" target="_blank">Zola</a>
+  </p>
+</footer>
+
+    </div>
+  </section>
+</body>
+
+<script>
+const timezone = "Europe/Rome";
+const city = "Bologna";
+
+document.addEventListener("DOMContentLoaded", function() {
+  function updateClock() {
+    const options = { 
+      timeZone: timezone,
+      hour: '2-digit', 
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    };
+    
+    const time = new Date().toLocaleTimeString('it-IT', options);
+    document.getElementById('clock').textContent = `${city}, ${time}`;
+    
+    // Update every second
+    setTimeout(updateClock, 1000);
+  }
+  
+  updateClock();
+});
+</script>
+
+</html>
+
