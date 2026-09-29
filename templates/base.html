@@ -5,8 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <title>Simone Tassi</title>   
+  {%- if page %}
+    {%- set page_title = page.title %}
+    {%- set page_description = page.description %}
+  {%- elif section and section.title != "home" %}
+    {%- set page_title = section.title %}
+    {%- set page_description = section.description %}
+  {%- else %}
+    {%- set page_title = "" %}
+    {%- set page_description = config.description %}
+  {%- endif %}
+  {%- if not page_description %}{% set page_description = config.description %}{% endif %}
+  <title>{% if page_title %}{{ page_title }} · {% endif %}Simone Tassi</title>
+  <meta name="description" content="{{ page_description }}">
   <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}" />
+  <link rel="stylesheet" href="{{ get_url(path='giallo.css') | safe }}" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

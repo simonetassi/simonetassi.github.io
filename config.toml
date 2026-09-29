@@ -1,6 +1,7 @@
 # The URL the site will be built for
 base_url = "https://simonetassi.github.io"
 title = "simonetassi"
+description = "Simone Tassi, software developer from Bologna, Italy. Projects, writing and contacts."
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
