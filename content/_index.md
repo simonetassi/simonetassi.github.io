@@ -17,7 +17,7 @@ My main interests include Internet of Things and Web of Things, Simulation and D
         <span class="connect-label">LinkedIn</span>
         <a href="https://linkedin.com/in/tassisimone" target="_blank">linkedin.com/tassisimone</a>
         <span class="connect-label">Email</span>
-        <a href="mailto:simonetassi.bo@gmail.com">simonetassi.bo@gmail.com</a>
+        <a href="mailto:simonetassi@proton.me">simonetassi@proton.me</a>
         <span class="connect-label">Academic Email</span>
         <a href="mailto:simone.tassi@studio.unibo.it" target="_blank">simone.tassi@studio.unibo.it</a>
     </div>

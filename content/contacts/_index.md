@@ -8,5 +8,5 @@ Public pages:
 - [github.com/simonetassi](https://github.com/simonetassi)
 
 Email:
-- [simonetassi.bo@gmail.com](mailto://simonetassi.bo@gmail.com) (personal)
+- [simonetassi@proton.me](mailto://simonetassi@proton.me) (personal)
 - [simone.tassi@studio.unibo.it](mailto://simone.tassi@studio.unibo.it) (academic)
