@@ -16,7 +16,7 @@ error_on_missing_language = true
 [extra]
 # Put all your custom variables here
 menu = [
-    { name = "about", url = "/about", weigtht = 1 },
+    { name = "about", url = "/about", weight = 1 },
     { name = "blog", url = "/blog", weight = 2 },
     { name = "projects", url = "/projects", weight = 3 },
 ]
@@ -29,3 +29,7 @@ socials = [
 timezone = 'Europe/Rome'
 city = 'Bologna'
 
+
+[link_checker]
+# LinkedIn rejects automated requests with status 999
+skip_prefixes = ["https://linkedin.com/", "https://www.linkedin.com/"]

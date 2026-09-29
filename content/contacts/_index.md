@@ -4,9 +4,9 @@ template = "page.html"
 +++
 Public pages:
 - [personal webpage](https://simonetassi.github.io)
-- [linkedin](https://linekdin.com/tassisimone)
+- [linkedin](https://linkedin.com/in/tassisimone)
 - [github.com/simonetassi](https://github.com/simonetassi)
 
 Email:
-- [simonetassi@proton.me](mailto://simonetassi@proton.me) (personal)
-- [simone.tassi@studio.unibo.it](mailto://simone.tassi@studio.unibo.it) (academic)
+- [simonetassi@proton.me](mailto:simonetassi@proton.me) (personal)
+- [simone.tassi@studio.unibo.it](mailto:simone.tassi@studio.unibo.it) (academic)

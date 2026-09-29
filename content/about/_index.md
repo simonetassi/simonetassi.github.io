@@ -9,6 +9,6 @@ Alongside my studies, I’m working part-time as a Software Engineer at [Archeio
 Apart from my academic/professional interests, music accompanies me throughout my days in various forms—from playing electric guitar and DJing at local venues to building my record collection. Each aspect offers a creative counterbalance to my technical work.
 My tastes particularly lean towards Jazz, World Music and (Deep) House but I am always ready to dig into new artists and genres.
 
-I particoularly enjoy reading and I keep track of what's on [my shelf](https://www.goodreads.com/user/show/177877174). 
+I particularly enjoy reading and I keep track of what's on [my shelf](https://www.goodreads.com/user/show/177877174). 
 
-Here is my [curriculm vitae](/simone-tassi-cv.pdf).
+Here is my [curriculum vitae](/simone-tassi-cv.pdf).
