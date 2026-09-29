@@ -1,19 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<ul style="padding-left: 10px;">
+<ul class="post-list">
   {% for page in section.pages %}
-  <li class="post-item" onclick="location.href='{{ page.permalink | safe }}';">
-    <img class="img-preview" src="{{ page.extra.img }}"></img>
-    <div class="post">
-      <p class="post-title">{{ page.title }}</p>
-      <p class="date">{{ page.date }}</p>
-      <div class="post-description">
-        <p>{{ page.description }}</p>
+  <li>
+    <a class="post-item" href="{{ page.permalink | safe }}">
+      {% if page.extra.img %}
+      <img class="img-preview" src="{{ page.extra.img }}" alt="">
+      {% endif %}
+      <div class="post">
+        <p class="post-title">{{ page.title }}</p>
+        <p class="date">{{ page.date }}</p>
+        <div class="post-description">
+          <p>{{ page.description }}</p>
+        </div>
       </div>
-    </div>
+    </a>
   </li>
   {% endfor %}
 </ul>
 {% endblock content %}
-
