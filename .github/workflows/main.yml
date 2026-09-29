@@ -5,6 +5,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    # Let the built-in GITHUB_TOKEN push the built site to gh-pages
+    permissions:
+      contents: write
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -13,5 +16,5 @@ jobs:
         env:
           # Target branch
           PAGES_BRANCH: gh-pages
-          # Or if publishing to the same repo, use the automatic token
-          TOKEN: ${{ secrets.TOKEN }}
+          # Publishing to the same repo, so the automatic token is enough
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
