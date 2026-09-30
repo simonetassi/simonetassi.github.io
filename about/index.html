@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about · Simone Tassi</title>
+  <meta name="description" content="Simone Tassi, software developer from Bologna, Italy. Projects, writing and contacts.">
+  <script>
+    try {
+      const theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="https://simonetassi.github.io/main.css" />
+  <link rel="stylesheet" href="https://simonetassi.github.io/giallo.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="/icons/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/icons/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/icons/favicon/site.webmanifest" /> 
+ 
+</head>
+
+<body>
+  <section class="section">
+    <div class="content">
+      <header> 
+  <div class="main">
+    
+      <a href="https://simonetassi.github.io">simonetassi</a>
+      
+        / <a href="/about">about</a>
+      
+    
+  </div>
+
+  <nav>
+    
+    
+      
+    
+      <a href=https://simonetassi.github.io/blog>blog</a>
+      
+      
+    
+      <a href=https://simonetassi.github.io/projects>projects</a>
+      
+      
+    
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="theme: system, click to change" title="theme: system">
+      <svg class="icon-system" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+      <svg class="icon-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+    </button>
+  </nav>
+</header>
+
+      <main>
+<div class="about-container">
+  <!--<img src="imgs/me.png"></img>-->
+  <div style="margin-top: 5rem;"><p>I’m currently pursuing a Master’s Degree in Computer Science with a specialization in Systems and Networks at the <a rel="external" href="https://www.unibo.it/en">University of Bologna</a>. As part of my academic journey, I’m deepening my knowledge in key areas such as Artificial Intelligence, Machine Learning, Edge and Cloud Computing, Data Science, and the Internet of Things. After gaining a strong theoretical foundation, I’ve been applying my knowledge through hands-on projects, which you can explore <a href="../projects">here</a>.</p>
+<p>Alongside my studies, I’m working part-time as a Software Engineer at <a rel="external" href="https://archeion.tech">Archeion</a>, where we develop end-to-end traceability solutions to ensure supply chain integrity, transparency, and authenticity. Our work combines the power of Artificial Intelligence, Blockchain, and the Internet of Things to deliver innovative and reliable systems.</p>
+<p>Apart from my academic/professional interests, music accompanies me throughout my days in various forms—from playing electric guitar and DJing at local venues to building my record collection. Each aspect offers a creative counterbalance to my technical work.
+My tastes particularly lean towards Jazz, World Music and (Deep) House but I am always ready to dig into new artists and genres.</p>
+<p>I particularly enjoy reading and I keep track of what's on <a rel="external" href="https://www.goodreads.com/user/show/177877174">my shelf</a>.</p>
+<p>Here is my <a href="/simone-tassi-cv.pdf">curriculum vitae</a>.</p>
+</div>
+</div>
+</main>
+      <footer>
+  <p class="footer-left">
+    <span id="clock">Bologna, 12:00</span>
+  </p>
+  <p class="footer-center">
+    <a href="https://www.github.com/simonetassi" target="_blank">source</a> |
+    <a
+      href="https://www.gnu.org/licenses/agpl-3.0.html#license-text"
+      target="_blank"
+      >GNU AGPL</a
+    >
+  </p>
+  <p class="footer-right">
+    Built with <a href="https://getzola.org" target="_blank">Zola</a>
+  </p>
+</footer>
+
+    </div>
+  </section>
+</body>
+
+<script>
+const timezone = "Europe/Rome";
+const city = "Bologna";
+
+document.addEventListener("DOMContentLoaded", function() {
+  function updateClock() {
+    const options = { 
+      timeZone: timezone,
+      hour: '2-digit', 
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    };
+    
+    const time = new Date().toLocaleTimeString('it-IT', options);
+    document.getElementById('clock').textContent = `${city}, ${time}`;
+    
+    // Update every second
+    setTimeout(updateClock, 1000);
+  }
+  
+  updateClock();
+
+  const themes = ["system", "light", "dark"];
+  const toggle = document.getElementById("theme-toggle");
+
+  function showTheme(theme) {
+    toggle.setAttribute("aria-label", `theme: ${theme}, click to change`);
+    toggle.title = `theme: ${theme}`;
+  }
+
+  showTheme(document.documentElement.dataset.theme || "system");
+
+  toggle.addEventListener("click", function() {
+    const current = document.documentElement.dataset.theme || "system";
+    const next = themes[(themes.indexOf(current) + 1) % themes.length];
+
+    if (next === "system") {
+      delete document.documentElement.dataset.theme;
+    } else {
+      document.documentElement.dataset.theme = next;
+    }
+    try {
+      if (next === "system") localStorage.removeItem("theme");
+      else localStorage.setItem("theme", next);
+    } catch (e) {}
+
+    showTheme(next);
+  });
+});
+</script>
+
+</html>
+
