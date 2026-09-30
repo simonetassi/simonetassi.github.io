@@ -16,6 +16,39 @@ header {
   nav a {
     margin: 0 3px;
   }
+
+  .theme-toggle {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0 3px 0 10px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+
+    svg {
+      display: none;
+      width: 1.1em;
+      height: 1.1em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  .theme-toggle:hover {
+    color: var(--color-medium-tint);
+  }
+}
+
+// Show the icon for the current mode; no data-theme means "system"
+:root:not([data-theme]) .theme-toggle .icon-system,
+:root[data-theme="light"] .theme-toggle .icon-light,
+:root[data-theme="dark"] .theme-toggle .icon-dark {
+  display: block;
 }
 
 @media (max-width: 710px) {

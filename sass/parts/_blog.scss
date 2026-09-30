@@ -56,5 +56,5 @@
 
 .post-item:hover,
 .post-item:focus-visible {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--hover-overlay);
 }

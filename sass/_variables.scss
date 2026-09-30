@@ -1,3 +1,14 @@
+@mixin light-palette {
+  --background-color: #ecdfcc;
+  --color-primary: #030303;
+  --color-primary-shade: #4b4741;
+  --color-medium: #787269;
+  --color-medium-tint: #635e57;
+  --color-medium-shade: #c5b9a2;
+  --hover-overlay: rgba(0, 0, 0, 0.05);
+  color-scheme: light;
+}
+
 :root {
   --background-color: #030303;
   --color-primary: #ecdfcc;
@@ -5,4 +16,17 @@
   --color-medium: #635e57;
   --color-medium-tint: #787269;
   --color-medium-shade: #4b4741;
+  --hover-overlay: rgba(255, 255, 255, 0.05);
+  color-scheme: dark;
+}
+
+// data-theme is set by the theme toggle; without it, follow the OS
+:root[data-theme="light"] {
+  @include light-palette;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    @include light-palette;
+  }
 }

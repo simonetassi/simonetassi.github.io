@@ -18,6 +18,12 @@
   {%- if not page_description %}{% set page_description = config.description %}{% endif %}
   <title>{% if page_title %}{{ page_title }} · {% endif %}Simone Tassi</title>
   <meta name="description" content="{{ page_description }}">
+  <script>
+    try {
+      const theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (e) {}
+  </script>
   <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}" />
   <link rel="stylesheet" href="{{ get_url(path='giallo.css') | safe }}" />
 
@@ -65,6 +71,33 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
   updateClock();
+
+  const themes = ["system", "light", "dark"];
+  const toggle = document.getElementById("theme-toggle");
+
+  function showTheme(theme) {
+    toggle.setAttribute("aria-label", `theme: ${theme}, click to change`);
+    toggle.title = `theme: ${theme}`;
+  }
+
+  showTheme(document.documentElement.dataset.theme || "system");
+
+  toggle.addEventListener("click", function() {
+    const current = document.documentElement.dataset.theme || "system";
+    const next = themes[(themes.indexOf(current) + 1) % themes.length];
+
+    if (next === "system") {
+      delete document.documentElement.dataset.theme;
+    } else {
+      document.documentElement.dataset.theme = next;
+    }
+    try {
+      if (next === "system") localStorage.removeItem("theme");
+      else localStorage.setItem("theme", next);
+    } catch (e) {}
+
+    showTheme(next);
+  });
 });
 </script>
 
